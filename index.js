@@ -31,11 +31,6 @@ function appendDriver(name){
   return newdrivers;
 }
 
-function prependDriver(name){
-  var newdrivers = drivers.slice();
-  newdrivers.unshift(name);
-  return newdrivers;
-}
 
 function prependDriver(name){
   var newdrivers = drivers.slice();
@@ -49,3 +44,8 @@ function removeLastDriver(name){
   return newdrivers;
 }
 
+function removeFirstDriver(name){
+  var newdrivers = drivers.slice();
+  newdrivers.shift(name);
+  return newdrivers;
+}
