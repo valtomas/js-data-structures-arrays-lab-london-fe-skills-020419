@@ -43,9 +43,9 @@ function prependDriver(name){
   return newdrivers;
 }
 
-function prependDriver(name){
+function removeLastDriver(name){
   var newdrivers = drivers.slice();
-  newdrivers.unshift(name);
+  newdrivers.pop(name);
   return newdrivers;
 }
 
