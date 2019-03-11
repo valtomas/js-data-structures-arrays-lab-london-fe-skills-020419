@@ -30,3 +30,9 @@ function appendDriver(name){
   newdrivers.push(name);
   return newdrivers;
 }
+
+function appendDriver(name){
+  var newdrivers = drivers.slice();
+  newdrivers.push(name);
+  return newdrivers;
+}
